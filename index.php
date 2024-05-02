@@ -18,12 +18,23 @@
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script  src="./js-script/script.js" defer></script>
-    <title>default format</title>
+    <title>PHP Badwords</title>
 </head>
 
 <body>
-    
-    
+    <div class="container text-center p-5">
+        <form class="d-flex flex-column align-items-center" action="" method="POST">
+            <div class="d-flex flex-column p-3">
+                <label class="p-2 fs-5 fw-medium " for="frase">Inserisci una frase che contenga almeno una parolaccia (per favore non bestemmie!)</label>
+                <input type="text" name="frase">
+            </div>
+            <div class="d-flex flex-column p-3">
+                <label class="p-2 fs-5 fw-medium " for="censura">adesso scrivi qua la parolaccia</label>
+                <input type="text" name="censura">
+            </div>
+            <div class="p-2"><button type="submit" class="btn btn-danger">Invia</button></div>
+        </form>
+    </div>
 </body>
 
 </html>
