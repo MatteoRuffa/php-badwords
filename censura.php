@@ -1,6 +1,8 @@
 <?php 
 $frase = $_POST['frase'];
 $censura = $_POST['censura'];
+
+$sostituzione = str_replace($censura, '***', $frase);
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +30,8 @@ $censura = $_POST['censura'];
 
 <body>
     <div class="container text-center p-5">
-        <p class="p-2 fs-5 fw-medium "><?php echo $frase ?></p> 
+        <p class="p-2 fs-4 fw-medium ">Maleducato! non scriverò quella parola xD</p>
+        <p class="p-2 fs-5 fw-medium "><?php echo $sostituzione ?></p> 
     </div>
 </body>
 
